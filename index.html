@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content>
+		<meta name="author" content="Webpixels">
+		<title>脑洞鬼畜社官网</title>
+		<!-- 预紧器 -->
+		<style>
+			@keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+			
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+		.fengrui-logo{
+			width: 160px;
+		}
+    </style>
+		<script>
+			window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+		<!-- Favicon 图标 -->
+		<link rel="icon" href="images/arrows.svg" type="image/png"><!-- Font Awesome -->
+		<link rel="stylesheet" href="css/all.min.css">
+		<!-- Quick CSS 引入 -->
+		<link rel="stylesheet" href="css/quick-website.css" id="stylesheet">
+	</head>
+	<body>
+		<div class="adcenter">
+			<script src="js/ggad2_728x90.js"></script>
+		</div>
+		<!-- 预紧器 -->
+		<div class="preloader">
+			<div class="spinner-border text-primary" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies"
+		 aria-hidden="true">
+			<div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+				<div class="modal-content bg-dark-dark">
+					<div class="modal-body">
+						<!-- Text -->
+						<p class="text-sm text-white mb-3">
+							We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.
+						</p>
+						<!-- Buttons -->
+						<a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+						<button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Go Pro 吸顶文本 --
+		<a href="https://www.frbkw.com" class="btn btn-block btn-primary text-truncate rounded-0 py-2 d-none d-lg-block"
+		 style="z-index: 1000;" target="_blank">
+			<strong>比特跃动旗下作品</strong> 信益校园 了解更多 →
+		</a>
+		-->
+		<!-- Navbar 导航-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="container">
+				<!-- Brand logo图标-->
+				<a class="navbar-brand" href="index.html">
+					<img alt="Image placeholder" src="images/logo.png" id="navbar-logo" img draggable="false">
+				</a>
+				<!-- Toggler -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Collapse -->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+						<!--<li class="nav-item ">
+							<a class="nav-link" href="index.html">比特跃动官网</a>
+						</li>
+						<li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他开源</a>
+							<div class="dropdown-menu dropdown-menu-single">
+								<a href="https://xc.frbkw.com" class="dropdown-item">星尘UI</a>
+								<a href="https://xm.frbkw.com" class="dropdown-item">星茫UI</a>
+								<a href="https://api.frbkw.com" class="dropdown-item">资源网</a>
+							</div>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="sponsor.html">特别赞助</a>
+						</li>
+					</ul> -->
+					<!-- Button -->
+					<a class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" href>
+						UP签约
+					</a>
+					<a class="navbar-btn btn btn-sm btn-warning d-none d-lg-inline-block" href="https://www.frbkw.com" target="_blank">
+						商业合作
+					</a>
+					<!-- Mobile button -->
+					<div class="d-lg-none text-center">
+						<a href="https://jq.qq.com/?_wv=1027&k=xStLUVAx" class="btn btn-block btn-sm btn-primary">UP签约</a>
+					</div>
+					<p></p>
+					<div class="d-lg-none text-center">
+						<a href="https://www.frbkw.com" class="btn btn-block btn-sm btn-warning">商业合作</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Main content -->
+		<section class="slice py-5">
+			<div class="container">
+				<div class="row row-grid align-items-center">
+					<div class="col-12 col-md-5 col-lg-6 order-md-2">
+						<!-- Image -->
+						<figure class="w-100">
+							<img alt="Image placeholder" src="images/undraw_content_team_3epn.svg" class="img-fluid mw-md-120" img draggable="false">
+						</figure>
+					</div>
+					<div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
+						<!-- Heading -->
+						<h1 class="display-4 text-center text-md-left mb-3">
+							一个专攻鬼畜的UP社团<strong class="text-primary">脑洞鬼畜社</strong>
+						</h1>
+						<!-- Text -->
+						<p class="lead text-center text-md-left text-muted">
+							互利共赢，多维发展。
+						</p>
+						<!-- Buttons -->
+						<div class="text-center text-md-left mt-5">
+							<a href="https://jq.qq.com/?_wv=1027&k=xStLUVAx" class="btn btn-primary btn-icon" target="_blank">
+								<span class="btn-inner--text">鬼畜交流群</span><span class="btn-inner--icon">
+									<i data-feather="arrow-right"></i>
+								</span>
+							</a>
+							<a href="tool.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block" target="_blank">鬼畜工具下载</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6">
+			<div class="container">
+				<!-- Title -->
+				<!-- Section title -->
+				<div class="row mb-5 justify-content-center text-center">
+					<div class="col-lg-6">
+						<span class="badge badge-soft-success badge-pill badge-lg">
+							基本概述
+						</span>
+						<h2 class=" mt-4">独立平等，多元创新</h2>
+						<div class="mt-2">
+							<p class="lead lh-180">可能是第一个专注于鬼畜UP类MCN机构</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card -->
+				<div class="row mt-5">
+					<div class="col-md-4">
+						<div class="card border-0 bg-soft-danger">
+							<div class="card-body pb-5">
+								<div class="pt-4 pb-5">
+									<img src="images/undraw_personal_finance_tqcd.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" img draggable="false">
+								</div>
+								<h5 class="h4 lh-130 text-dark mb-3">商业变现</h5>
+								<p class="text-dark opacity-6 mb-0">提升合作效率、整合多种商业变现,为你的技术变现提供可能可能；</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card border-0 bg-soft-success">
+							<div class="card-body pb-5">
+								<div class="pt-4 pb-5">
+									<img src="images/undraw_os_upgrade_nj2m.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" img draggable="false">
+								</div>
+								<h5 class="h4 lh-130 text-dark mb-3">运营扶持</h5>
+								<p class="text-dark opacity-6 mb-0">运营指导敦促、与官方合作扶持UP成长机会；</p>
+							</div>
+						</div>
+					</div>
+					 <div class="col-md-4">
+						<div class="card border-0 bg-soft-warning">
+							<div class="card-body pb-5">
+								<div class="pt-4 pb-5">
+									<img src="images/undraw_collab_8oes.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" img draggable="false">
+								</div>
+								<h5 class="h4 lh-130 text-dark mb-3">交流社群</h5>
+								<p class="text-dark opacity-6 mb-0">与旗下大佬进行合作交流，提高技术力一大首选</p>
+							</div>
+						</div>
+					</div>
+					<!--<div class="col-md-4">
+						<div class="card border-0 bg-soft-warning">
+							<div class="card-body pb-5">
+								<div class="pt-4 pb-5">
+									<img src="images/illustration-7.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration">
+								</div>
+								<h5 class="h4 lh-130 text-dark mb-3">照葫芦画瓢</h5>
+								<p class="text-dark opacity-6 mb-0">不懂任何语法可以模仿php文件任何字段，满足需求</p>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</section>
+		<section class="slice slice-lg">
+			<div class="container">
+				<div class="row row-grid justify-content-around align-items-center">
+					<div class="col-lg-6 order-lg-2 ml-lg-auto pl-lg-6">
+						
+							
+						<h5 class="h2 mt-4">闹闹</h5>
+						
+						<p class="lead lh-190 my-4">
+							脑洞鬼畜社旗下虚拟UP主
+						</p>
+						
+						<ul class="list-unstyled">
+							<li class="py-2">
+								<div class="d-flex align-items-center">
+									<div>
+										<div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3">
+											<i class="fas fa-store-alt"></i>
+										</div>
+									</div>
+									<div>
+										<span class="h6 mb-0">支持微信公众号列表</span>
+									</div>
+								</div>
+							</li>
+							<li class="py-2">
+								<div class="d-flex align-items-center">
+									<div>
+										<div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3">
+											<i class="fas fa-palette"></i>
+										</div>
+									</div>
+									<div>
+										<span class="h6 mb-0">支持线扫码关注微信公众号</span>
+									</div>
+								</div>
+							</li>
+							<li class="py-2">
+								<div class="d-flex align-items-center">
+									<div>
+										<div class="icon icon-shape icon-success icon-sm rounded-circle mr-3">
+											<i class="fas fa-cog"></i>
+										</div>
+									</div>
+									<div>
+										<span class="h6 mb-0">适配微信，QQ，Android等多端</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				
+					<div class="col-lg-6 order-lg-1">
+						
+						<div class="position-relative zindex-100">
+							<img alt="Image placeholder" src="images/naonao.png" class="img-fluid" img draggable="false">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>-->
+		<section class="slice slice-lg bg-section-dark pt-5 pt-lg-8">
+			<!-- SVG separator -->
+			<div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+				<svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				 preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;"
+				 xml:space="preserve" class="">
+					<polygon points="2560 0 2560 100 0 100" />
+				</svg>
+			</div>
+			<!-- Container -->
+			<div class="container position-relative zindex-100">
+				<div class="col">
+					<div class="row justify-content-center">
+						<div class="col-md-10 text-center">
+							<div class="mt-4 mb-6">
+								<h2 class="h1 text-white">
+									如何获取和安装?
+								</h2>
+								<h4 class="text-white mt-3">放心，我们为你准备好了一切！</h4>
+								<!-- Play button -->
+								<a href="https://v.qq.com/x/page/e3159zzf0fn.html" class="btn btn-warning btn-icon hover-translate-y-n10 mt-4" target="_blank">
+									<span class="btn-inner--icon">
+										<i data-feather="play"></i>
+									</span>
+									<span class="btn-inner--text" >
+										视频教程
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="slice pt-0">
+			<div class="container position-relative zindex-100">
+				<div class="row">
+					<div class="col-xl-4 col-sm-6 mt-n7">
+						<div class="card bg-soft-warning border-0 mb-5 hover-translate-y-n10">
+							<div class="d-flex p-5">
+								<div>
+									<span class="badge badge-warning badge-pill">视频</span>
+								</div>
+								<div class="pl-4">
+									<h5 class="lh-130 text-dark">腾讯视频教程</h5>
+									<p class="text-dark opacity-6">
+										录制视频操作流程，上传腾讯视频，随时随地播放
+									</p>
+								</div>
+							</div>
+							<div class="pb-5">
+								<img src="images/illustration-7.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-sm-6 mt-sm-n7">
+						<div class="card bg-soft-success border-0 mb-5 hover-translate-y-n10">
+							<div class="d-flex p-5">
+								<div>
+									<span class="badge badge-success badge-pill">微信</span>
+								</div>
+								<div class="pl-4">
+									<h5 class="lh-130 text-dark">公众号文章</h5>
+									<p class="text-dark opacity-6">
+										关注公众号随时获取最新消息
+									</p>
+								</div>
+							</div>
+							<div class="pb-5">
+								<img src="images/illustration-6.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-12 col-sm-6 mt-xl-n7">
+						<div class="card bg-soft-danger border-0 mb-5 hover-translate-y-n10">
+							<div class="d-flex p-5 p">
+								<div>
+									<span class="badge badge-danger badge-pill">博客</span>
+								</div>
+								<div class="pl-3">
+									<h5 class="lh-130 text-dark">博客首发</h5>
+									<p class="text-dark opacity-6">
+										最新发布星宿版消息，基础seo优化百度一下我出现
+									</p>
+								</div>
+							</div>
+							<div class="pb-5">
+								<img src="images/illustration-5.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="slice slice-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<span class="badge badge-primary badge-pill">社团成员</span>
+						<h5 class="lh-180 mt-4 mb-6">以下为<span style="color: red;">现阶段</span>签约的成员</h5>
+					</div>
+				</div>
+				<!-- Features -->
+				<div class="row mx-lg-n4">
+					<!-- Features - Col 1 -->
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+										<i data-feather="check"></i>
+									</div>
+								</div>
+								<div>
+									<span class="h6">煎蛋君</span>
+									<p class="text-sm text-muted mb-0">
+										现任主理人 擅长填词 活跃于哔哩哔哩
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
+										<i data-feather="check"></i>
+										<img src="images/h;bxe.png" class="img-fluid img-center" style="height: 200px Width: 200px;" alt="头像">
+									</div>
+								</div>
+								<div>
+									<span class="h6">胡萝卜须儿</span>
+									<p class="text-sm text-muted mb-0">
+										鬼畜制作UP主 活跃于哔哩哔哩 Acfun
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
+										<i data-feather="check"></i>
+									</div>
+								</div>
+								<div>
+									<span class="h6">中二病的艾罗芒</span>
+									<p class="text-sm text-muted mb-0">
+										鬼畜制作UP主 活跃于哔哩哔哩 Acfun
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-success text-white mr-4">
+										<i data-feather="check"></i>
+									</div>
+								</div>
+								<div>
+									<span class="h6">苍燃老贼</span>
+									<p class="text-sm text-muted mb-0">
+										鬼畜制作UP主 活跃于哔哩哔哩
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-info text-white mr-4">
+										<i data-feather="check">ss</i>
+									</div>
+								</div>
+								<div>
+									<span class="h6">洛卡Rohcard-33</span>
+									<p class="text-sm text-muted mb-0">
+										鬼畜制作UP主 活跃于哔哩哔哩
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
+							<div class="p-3 d-flex">
+								<div>
+									<div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+										<i data-feather="check"></i>
+										<img src="images/h;bxe.png" class="img-fluid img-center" style="height: 200px Width: 200px;" alt="头像">
+									</div>
+								</div>
+								<div>
+									<span class="h6">银岩ちゃん</span>
+									<p class="text-sm text-muted mb-0">
+										擅长填词 活跃于哔哩哔哩
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Features - Col 3 -->
+					<!-- 
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none">
+							<div class="p-3 d-flex">
+								<div>
+									<div>
+										<div class="icon icon-shape rounded-circle bg-info text-white mr-4">
+											<i data-feather="check"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<span class="h6">Animate CSS</span>
+									<p class="text-sm text-muted mb-0">
+										Thank you for your special support
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none">
+							<div class="p-3 d-flex">
+								<div>
+									<div>
+										<div class="icon icon-shape rounded-circle bg-danger text-white mr-4">
+											<i data-feather="check"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<span class="h6">Integrated plugins</span>
+									<p class="text-sm text-muted mb-0">
+										Thank you for your special support
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 px-lg-4">
+						<div class="card shadow-none">
+							<div class="p-3 d-flex">
+								<div>
+									<div>
+										<div class="icon icon-shape rounded-circle bg-primary text-white mr-4">
+											<i data-feather="check"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<span class="h6">Smart HTML markup</span>
+									<p class="text-sm text-muted mb-0">
+										Thank you for your special support
+									</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<section class="slice slice-lg bg-section-secondary">
+			<div class="container text-center">
+				<div class="row justify-content-center mt-4">
+					<div class="col-lg-8">
+						<!-- Title -->
+						<h2 class="h1 strong-600">
+							关注和谐，谋求发展
+						</h2>
+						<!-- Text -->
+						<p class="lead text-muted">
+							今生遇汝，何其幸哉；于我蒙昧之时遇到你，于我大雾初透之时爱上你，于我大智初醒之时沉沦你；
+						</p>
+						<!-- Buttons -->
+						<div class="mt-5">
+							<a href="javascript:;" onclick="repeat()">
+
+							<a href="https://space.bilibili.com/412609828" class="btn btn-lg btn-primary px-4" target="_blank">
+								Bilibili官号
+							</a>
+							<a href="https://www.acfun.cn/u/13340395" class="btn btn-lg btn-warning px-4" target="_blank">
+								Acfun官号
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="position-relative" id="footer-main">
+			<div class="footer pt-lg-7 footer-dark bg-dark">
+				<!-- SVG shape -->
+				<div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+					<svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;"
+					 xml:space="preserve" class=" fill-section-secondary">
+						<polygon points="2560 0 2560 100 0 100" />
+					</svg>
+				</div>
+				<!-- Footer -->
+				<div class="container pt-4">
+					<div class="row">
+						<div class="col-lg-4 mb-5 mb-lg-0">
+							<!-- Theme's logo -->
+							<a href="index.html">
+								<img alt="Image placeholder" class="fengrui-logo" src="images/logo-bai-201020.png" id="footer-logo">
+							</a>
+							<!-- Webpixels' mission -->
+							<p class="mt-4 text-sm opacity-8 pr-lg-4">枫瑞博客网基于uni-app框架为首的开源小程序开源网站，自学自立，自给自足，让我们新手在使用微信小程序时获取更好的资源和教程</p>
+							<!-- Social -->
+							<ul class="nav mt-4">
+								<li class="nav-item">
+									<a class="nav-link pl-0" href target="_blank">
+										<i class="fab fa-dribbble"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" target="_blank">
+										<i class="fab fa-github"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" target="_blank">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#" target="_blank">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+							<h6 class="heading mb-3">更多开源</h6>
+							<ul class="list-unstyled">
+								<li><a href="http://xs.frbkw.com/" target="_blank">星宿UI</a></li>
+								<li><a href="http://xc.frbkw.com/" target="_blank">星尘UI</a></li>
+								<li><a href="http://xm.frbkw.com/" target="_blank">星茫UI</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+							<h6 class="heading mb-3">其他导航</h6>
+							<ul class="list-unstyled">
+								<li><a href="https://www.frbkw.com/category/uniyuanma/" target="_blank">uni-app框架</a></li>
+								<li><a href="https://www.frbkw.com/category/qianduanyuanma/" target="_blank">web前端</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+							<h6 class="heading mb-3">其他网站</h6>
+							<ul class="list-unstyled">
+								<li><a href="http://api.frbkw.com/" target="_blank">资源网</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr class="divider divider-fade divider-dark my-4">
+					<div class="row align-items-center justify-content-md-between pb-4">
+						<div class="col-md-6">
+							<div class="copyright text-sm font-weight-bold text-center text-md-left">
+								Copyright &copy; 2020All rights reserved.由 <a href="https://space.bilibili.com/11192010" target="_blank"
+								 title="胡萝卜须儿">胡萝卜须儿</a> 维护
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+								<li class="nav-item">
+									<a class="nav-link" href="https://beian.miit.gov.cn/#/" target="_blank">
+										闽ICP备17031850号-2
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Core JS  -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/svg-injector.min.js"></script>
+		<script src="js/feather.min.js"></script>
+		<!-- Quick JS -->
+		<script src="js/quick-website.js"></script>
+		<!-- Feather Icons -->
+		<script>
+			feather.replace({
+				'width': '1em',
+				'height': '1em'
+			})
+		</script>
+	</body>
+
+</html>
